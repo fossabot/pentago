@@ -1,0 +1,291 @@
+\hypertarget{fonctions_plateau_8h}{\section{\-Référence du fichier headers/fonctions\-Plateau.h}
+\label{fonctions_plateau_8h}\index{headers/fonctions\-Plateau.\-h@{headers/fonctions\-Plateau.\-h}}
+}
+
+
+définitions des prototypes des fonctions relative au plateau  
+
+
+{\ttfamily \#include \char`\"{}constantes.\-h\char`\"{}}\*
+\-Graphe des dépendances par inclusion de fonctions\-Plateau.\-h\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fonctions_plateau_8h__incl}
+\end{center}
+\end{figure}
+\-Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fonctions_plateau_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{\-Structures de données}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_input}{\-Input}
+\begin{DoxyCompactList}\small\item\em sert à gerer les entréer saisis par le joueur \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{fonctions_plateau_8h_aab348cdede8cfa4104aefc0dace18e05}{\-Update\-Events} (\hyperlink{struct_input}{\-Input} $\ast$in)
+\begin{DoxyCompactList}\small\item\em gestion des events selon les entrées saisis \end{DoxyCompactList}\item 
+void \hyperlink{fonctions_plateau_8h_af8c205efcbda1635fd2c62ce57b535b4}{init\-Plateau} (\hyperlink{constantes_8h_ac19c17e9f0f0eeec3f3c11b052cfeb47}{\-Plateau} \-P)
+\begin{DoxyCompactList}\small\item\em initialisation du plateau de cases vides \end{DoxyCompactList}\item 
+void \hyperlink{fonctions_plateau_8h_ae4dba04b9a0d5d145bafae6da91baca7}{affiche\-Plateau} (\-S\-D\-L\-\_\-\-Surface $\ast$ecran, \hyperlink{constantes_8h_ac19c17e9f0f0eeec3f3c11b052cfeb47}{\-Plateau} \-P, \-S\-D\-L\-\_\-\-Surface $\ast$tab\-Emplacement\-Bille\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em affichage du plateau dans la fenetre \end{DoxyCompactList}\item 
+bool \hyperlink{fonctions_plateau_8h_a95aaae34c0268305226854bb0ad1cff3}{placer\-Bille} (\hyperlink{constantes_8h_ac19c17e9f0f0eeec3f3c11b052cfeb47}{\-Plateau} \-P, int abs\-Clic, int ord\-Clic, int nombre\-\_\-coups)
+\begin{DoxyCompactList}\small\item\em placement d'une bille sur un plateau \end{DoxyCompactList}\item 
+bool \hyperlink{fonctions_plateau_8h_ac4c87ed6f29a02e05ccbc83097ff1f3c}{determiner\-Rotation} (int abs\-Clic, int ord\-Clic, \-S\-D\-L\-\_\-\-Rect tab\-Pos\-Fleche\-Rotation\mbox{[}$\,$\mbox{]}, int $\ast$\hyperlink{constantes_8h_aa65e3b592c27609a542733310b34f5d9}{sens}, int $\ast$partie\-Tableau)
+\begin{DoxyCompactList}\small\item\em determiner quelle rotation il faut faire \end{DoxyCompactList}\item 
+void \hyperlink{fonctions_plateau_8h_a8d7e72e320715fb45ec4e350b6d1f103}{rotation} (int \hyperlink{constantes_8h_ac19c17e9f0f0eeec3f3c11b052cfeb47}{\-Plateau}\mbox{[}$\,$\mbox{]}\mbox{[}\hyperlink{constantes_8h_abff55699e9fdf03f67a0279aa5c84ebe}{\-D\-I\-M\-\_\-\-P\-L\-A\-T\-E\-A\-U}\mbox{]}, int \hyperlink{constantes_8h_aa65e3b592c27609a542733310b34f5d9}{sens}, int partie\-Tableau)
+\begin{DoxyCompactList}\small\item\em effectue une rotation sur un partie du plateau \end{DoxyCompactList}\item 
+int \hyperlink{fonctions_plateau_8h_ab9d046b8743ee529bbeb780a0401241d}{est\-Gagnant} (int \hyperlink{constantes_8h_ac19c17e9f0f0eeec3f3c11b052cfeb47}{\-Plateau}\mbox{[}$\,$\mbox{]}\mbox{[}\hyperlink{constantes_8h_abff55699e9fdf03f67a0279aa5c84ebe}{\-D\-I\-M\-\_\-\-P\-L\-A\-T\-E\-A\-U}\mbox{]})
+\begin{DoxyCompactList}\small\item\em determine si il y a un gagnant ou pas sur un plateau \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Description détaillée}
+définitions des prototypes des fonctions relative au plateau 
+
+\subsection{\-Documentation des fonctions}
+\hypertarget{fonctions_plateau_8h_ae4dba04b9a0d5d145bafae6da91baca7}{\index{fonctions\-Plateau.\-h@{fonctions\-Plateau.\-h}!affiche\-Plateau@{affiche\-Plateau}}
+\index{affiche\-Plateau@{affiche\-Plateau}!fonctionsPlateau.h@{fonctions\-Plateau.\-h}}
+\subsubsection[{affiche\-Plateau}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf affiche\-Plateau} (
+\begin{DoxyParamCaption}
+\item[{\-S\-D\-L\-\_\-\-Surface $\ast$}]{ecran, }
+\item[{{\bf \-Plateau}}]{\-P, }
+\item[{\-S\-D\-L\-\_\-\-Surface $\ast$}]{tab\-Emplacement\-Bille\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{fonctions_plateau_8h_ae4dba04b9a0d5d145bafae6da91baca7}
+
+
+affichage du plateau dans la fenetre 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em ecran} & la surface \-S\-D\-L où afficher le plateau \\
+\hline
+{\em \-P} & le plateau à afficher \\
+\hline
+{\em tab\-Emplacement\-Bille\mbox{[}$\,$\mbox{]}} & tableau contenant les coordonnées de chaque bille \\
+\hline
+\end{DoxyParams}
+
+
+\-Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fonctions_plateau_8h_ae4dba04b9a0d5d145bafae6da91baca7_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{fonctions_plateau_8h_ac4c87ed6f29a02e05ccbc83097ff1f3c}{\index{fonctions\-Plateau.\-h@{fonctions\-Plateau.\-h}!determiner\-Rotation@{determiner\-Rotation}}
+\index{determiner\-Rotation@{determiner\-Rotation}!fonctionsPlateau.h@{fonctions\-Plateau.\-h}}
+\subsubsection[{determiner\-Rotation}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf determiner\-Rotation} (
+\begin{DoxyParamCaption}
+\item[{int}]{abs\-Clic, }
+\item[{int}]{ord\-Clic, }
+\item[{\-S\-D\-L\-\_\-\-Rect}]{tab\-Pos\-Fleche\-Rotation\mbox{[}$\,$\mbox{]}, }
+\item[{int $\ast$}]{sens, }
+\item[{int $\ast$}]{partie\-Tableau}
+\end{DoxyParamCaption}
+)}}\label{fonctions_plateau_8h_ac4c87ed6f29a02e05ccbc83097ff1f3c}
+
+
+determiner quelle rotation il faut faire 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em abs\-Clic} & abscice de la souris \\
+\hline
+{\em ord\-Clic} & ordonne de la souris \\
+\hline
+{\em tab\-Pos\-Fleche\-Rotation\mbox{[}$\,$\mbox{]}} & pour savoir la position des flèches a l'écran \\
+\hline
+{\em sens} & le sens de rotation a effectuer \\
+\hline
+{\em partie\-Tableau} & sur quelle partie du plateau on effectue la rotation\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Renvoie}
+vrais si on doit faire une rotation çàd si on a cliquer sur une flêche 
+\end{DoxyReturn}
+
+
+\-Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fonctions_plateau_8h_ac4c87ed6f29a02e05ccbc83097ff1f3c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{fonctions_plateau_8h_ab9d046b8743ee529bbeb780a0401241d}{\index{fonctions\-Plateau.\-h@{fonctions\-Plateau.\-h}!est\-Gagnant@{est\-Gagnant}}
+\index{est\-Gagnant@{est\-Gagnant}!fonctionsPlateau.h@{fonctions\-Plateau.\-h}}
+\subsubsection[{est\-Gagnant}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf est\-Gagnant} (
+\begin{DoxyParamCaption}
+\item[{int}]{\-Plateau\mbox{[}$\,$\mbox{]}\mbox{[}\-D\-I\-M\-\_\-\-P\-L\-A\-T\-E\-A\-U\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{fonctions_plateau_8h_ab9d046b8743ee529bbeb780a0401241d}
+
+
+determine si il y a un gagnant ou pas sur un plateau 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em le} & plateau analysé\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Renvoie}
+un nombre qui représente le gagnant 
+\end{DoxyReturn}
+
+
+\-Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fonctions_plateau_8h_ab9d046b8743ee529bbeb780a0401241d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{fonctions_plateau_8h_af8c205efcbda1635fd2c62ce57b535b4}{\index{fonctions\-Plateau.\-h@{fonctions\-Plateau.\-h}!init\-Plateau@{init\-Plateau}}
+\index{init\-Plateau@{init\-Plateau}!fonctionsPlateau.h@{fonctions\-Plateau.\-h}}
+\subsubsection[{init\-Plateau}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf init\-Plateau} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Plateau}}]{\-P}
+\end{DoxyParamCaption}
+)}}\label{fonctions_plateau_8h_af8c205efcbda1635fd2c62ce57b535b4}
+
+
+initialisation du plateau de cases vides 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em \-P} & le plateau à initialiser \\
+\hline
+\end{DoxyParams}
+
+
+\-Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fonctions_plateau_8h_af8c205efcbda1635fd2c62ce57b535b4_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{fonctions_plateau_8h_a95aaae34c0268305226854bb0ad1cff3}{\index{fonctions\-Plateau.\-h@{fonctions\-Plateau.\-h}!placer\-Bille@{placer\-Bille}}
+\index{placer\-Bille@{placer\-Bille}!fonctionsPlateau.h@{fonctions\-Plateau.\-h}}
+\subsubsection[{placer\-Bille}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf placer\-Bille} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Plateau}}]{\-P, }
+\item[{int}]{abs\-Clic, }
+\item[{int}]{ord\-Clic, }
+\item[{int}]{nbr\-\_\-coups}
+\end{DoxyParamCaption}
+)}}\label{fonctions_plateau_8h_a95aaae34c0268305226854bb0ad1cff3}
+
+
+placement d'une bille sur un plateau 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em \-P} & le plateau uitilisé \\
+\hline
+{\em abs\-Clic} & abscice de la souris \\
+\hline
+{\em ord\-Clic} & ordonne de la souris \\
+\hline
+{\em nombre\-\_\-coups} & nombre qui sert a determiner si on place une bille noire ou blanche\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Renvoie}
+vrais si une bille a été placée 
+\end{DoxyReturn}
+
+
+\-Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fonctions_plateau_8h_a95aaae34c0268305226854bb0ad1cff3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{fonctions_plateau_8h_a8d7e72e320715fb45ec4e350b6d1f103}{\index{fonctions\-Plateau.\-h@{fonctions\-Plateau.\-h}!rotation@{rotation}}
+\index{rotation@{rotation}!fonctionsPlateau.h@{fonctions\-Plateau.\-h}}
+\subsubsection[{rotation}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf rotation} (
+\begin{DoxyParamCaption}
+\item[{int}]{\-Plateau\mbox{[}$\,$\mbox{]}\mbox{[}\-D\-I\-M\-\_\-\-P\-L\-A\-T\-E\-A\-U\mbox{]}, }
+\item[{int}]{sens, }
+\item[{int}]{partie\-Tableau}
+\end{DoxyParamCaption}
+)}}\label{fonctions_plateau_8h_a8d7e72e320715fb45ec4e350b6d1f103}
+
+
+effectue une rotation sur un partie du plateau 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em \-Plateau} & le plateau utilisé \\
+\hline
+{\em sens} & le sens de la rotation \\
+\hline
+{\em partie\-Tableau} & la partie du plateau ou la rotation est effectuée \\
+\hline
+\end{DoxyParams}
+
+
+\-Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fonctions_plateau_8h_a8d7e72e320715fb45ec4e350b6d1f103_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{fonctions_plateau_8h_aab348cdede8cfa4104aefc0dace18e05}{\index{fonctions\-Plateau.\-h@{fonctions\-Plateau.\-h}!\-Update\-Events@{\-Update\-Events}}
+\index{\-Update\-Events@{\-Update\-Events}!fonctionsPlateau.h@{fonctions\-Plateau.\-h}}
+\subsubsection[{\-Update\-Events}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Update\-Events} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Input} $\ast$}]{in}
+\end{DoxyParamCaption}
+)}}\label{fonctions_plateau_8h_aab348cdede8cfa4104aefc0dace18e05}
+
+
+gestion des events selon les entrées saisis 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em in} & les entrées saisis \\
+\hline
+\end{DoxyParams}
+
+
+\-Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fonctions_plateau_8h_aab348cdede8cfa4104aefc0dace18e05_icgraph}
+\end{center}
+\end{figure}
+
+

@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$fonctions_affichage_8h.html#ad5c598ce2c6742ec4c3e771488987abe" title="Affiche les rêgles du jeu." alt="" coords="140,109,241,139"/>
+<area shape="rect" id="node9" href="$main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="premier fonction utilisée au lancement du programme" alt="" coords="653,111,704,140"/>
+<area shape="rect" id="node15" href="$fonctions_affichage_8h.html#a830a6d65d1a989f174c3bcde5ae69151" title="Affiche les information sur le jeu." alt="" coords="308,213,409,243"/>
+<area shape="rect" id="node5" href="$fonctions_affichage_8h.html#a48262da5b852d7d777c20285f2f0b99a" title="détermine si le joueur clique sur un des item du menu miniature" alt="" coords="291,59,427,88"/>
+<area shape="rect" id="node7" href="$partie_deux_joueurs_8h.html#a374909eadd0b6ee203667f93f32342ec" title="permet de jouer contre un joueur" alt="" coords="475,5,605,35"/>
+<area shape="rect" id="node11" href="$partie_un_joueur_8h.html#a4abb180c273289e30fd8dd09696265f8" title="permet de jouer contre l&#39;ordinateur" alt="" coords="485,59,595,88"/>
+</map>

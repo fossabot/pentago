@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$fonctions_i_a_8h.html#ae8b2b1efa750c376aeff3f38f665f76d" title="fonction evaluant si le plateau est plus ou moin favorable à l&#39;ordi" alt="" coords="136,29,261,59"/>
+<area shape="rect" id="node5" href="$fonctions_i_a_8h.html#a1416d179ad4f5765bbb790a77052b966" title="fonction recherchant le meilleur coup possible pour l&#39;ordinateur en optimisant les passages dans l&#39;ar..." alt="" coords="309,29,389,59"/>
+<area shape="rect" id="node8" href="$partie_un_joueur_8h.html#a4abb180c273289e30fd8dd09696265f8" title="permet de jouer contre l&#39;ordinateur" alt="" coords="439,29,548,59"/>
+<area shape="rect" id="node10" href="$main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="premier fonction utilisée au lancement du programme" alt="" coords="597,29,648,59"/>
+</map>

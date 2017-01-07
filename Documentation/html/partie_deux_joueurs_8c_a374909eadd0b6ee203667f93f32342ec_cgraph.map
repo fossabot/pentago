@@ -1,0 +1,16 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$fonctions_plateau_8c.html#af8c205efcbda1635fd2c62ce57b535b4" title="initialisation du plateau de cases vides" alt="" coords="216,5,299,35"/>
+<area shape="rect" id="node5" href="$fonctions_affichage_8c.html#aa0b97452ac0e386637b196b6b8105c7d" title="initialise le menu miniature selon la partie joué" alt="" coords="196,59,319,88"/>
+<area shape="rect" id="node7" href="$fonctions_plateau_8c.html#aab348cdede8cfa4104aefc0dace18e05" title="gestion des events selon les entrées saisis" alt="" coords="205,112,309,141"/>
+<area shape="rect" id="node9" href="$fonctions_affichage_8c.html#a48262da5b852d7d777c20285f2f0b99a" title="détermine si le joueur clique sur un des item du menu miniature" alt="" coords="189,165,325,195"/>
+<area shape="rect" id="node15" href="$fonctions_plateau_8h.html#ab9d046b8743ee529bbeb780a0401241d" title="determine si il y a un gagnant ou pas sur un plateau" alt="" coords="213,219,301,248"/>
+<area shape="rect" id="node17" href="$fonctions_plateau_8c.html#a088863befa113f97db87b0ab58312bdf" title="placement d&#39;une bille sur un plateau" alt="" coords="216,272,299,301"/>
+<area shape="rect" id="node19" href="$fonctions_plateau_8c.html#ac4c87ed6f29a02e05ccbc83097ff1f3c" title="determiner quelle rotation il faut faire" alt="" coords="192,325,323,355"/>
+<area shape="rect" id="node21" href="$fonctions_plateau_8h.html#a8d7e72e320715fb45ec4e350b6d1f103" title="effectue une rotation sur un partie du plateau" alt="" coords="225,379,289,408"/>
+<area shape="rect" id="node23" href="$fonctions_plateau_8c.html#ae4dba04b9a0d5d145bafae6da91baca7" title="affichage du plateau dans la fenetre" alt="" coords="205,432,309,461"/>
+<area shape="rect" id="node25" href="$fonctions_affichage_8c.html#a6de5a4b9281294c56a4bd7254cdb481d" title="affiche quand une partie est terminée le nom du gagnant et le nombre de coup joué par celui ci..." alt="" coords="219,485,296,515"/>
+<area shape="rect" id="node27" href="$fonctions_affichage_8c.html#a6cede375026585c570c284965c06f83a" title="fonction affichant le joueur qui est en train de jouer" alt="" coords="208,539,307,568"/>
+<area shape="rect" id="node29" href="$fonctions_affichage_8c.html#a805c8a6f72037e8a2d3649e1ff874fa0" title="affiche le menu miniature situé en bas de la fenêtre" alt="" coords="184,592,331,621"/>
+<area shape="rect" id="node11" href="$fonctions_affichage_8c.html#a6a74e3ea603ed4022ce59f1e57dbb6dd" title="Affiche les rêgles du jeu." alt="" coords="380,165,481,195"/>
+<area shape="rect" id="node13" href="$fonctions_affichage_8c.html#aefaab0a4a9e4ccb284e6ce210fb6973b" title="détermine si le joueur clique sur un des choix du menu" alt="" coords="531,165,616,195"/>
+</map>

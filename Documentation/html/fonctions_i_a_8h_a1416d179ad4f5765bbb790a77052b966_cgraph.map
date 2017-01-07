@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$fonctions_i_a_8c.html#ae8b2b1efa750c376aeff3f38f665f76d" title="fonction evaluant si le plateau est plus ou moin favorable à l&#39;ordi" alt="" coords="261,137,387,166"/>
+<area shape="rect" id="node5" href="$fonctions_plateau_8h.html#ab9d046b8743ee529bbeb780a0401241d" title="determine si il y a un gagnant ou pas sur un plateau" alt="" coords="436,85,524,114"/>
+<area shape="rect" id="node10" href="$fonctions_i_a_8c.html#a0e4cfe307082f42b29068d14fa592ccd" title="détermine le meilleur coups potentiel à jouer par l&#39;ia" alt="" coords="275,28,373,57"/>
+<area shape="rect" id="node12" href="$fonctions_plateau_8h.html#a8d7e72e320715fb45ec4e350b6d1f103" title="effectue une rotation sur un partie du plateau" alt="" coords="292,200,356,229"/>
+<area shape="rect" id="node14" href="$fonctions_i_a_8c.html#a1416d179ad4f5765bbb790a77052b966" title="fonction recherchant le meilleur coup possible pour l&#39;ordinateur en optimisant les passages dans l&#39;ar..." alt="" coords="133,100,213,129"/>
+<area shape="rect" id="node7" href="$fonctions_i_a_8c.html#a8d45a9c590e7a75d0b34a4f61c4e9d0b" title="analyse le plateau pour une couleur" alt="" coords="439,138,521,168"/>
+</map>

@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Pentago:  Fichier source de headers/constantes.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Pentago
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">headers/constantes.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="constantes_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00010"></a>00010 <span class="preprocessor">#ifndef DEF_CONSTANTES</span>
+<a name="l00011"></a>00011 <span class="preprocessor"></span><span class="preprocessor">#define DEF_CONSTANTES</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &lt;stdlib.h&gt;</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include &lt;stdio.h&gt;</span>
+<a name="l00015"></a>00015 <span class="preprocessor">#include &lt;SDL/SDL.h&gt;</span>
+<a name="l00016"></a>00016 <span class="preprocessor">#include &lt;SDL/SDL_image.h&gt;</span>
+<a name="l00017"></a>00017 <span class="preprocessor">#include &lt;stdbool.h&gt;</span>
+<a name="l00018"></a>00018 <span class="preprocessor">#include &lt;SDL/SDL_ttf.h&gt;</span>
+<a name="l00019"></a>00019 <span class="preprocessor">#include &lt;SDL/SDL.h&gt;</span>
+<a name="l00020"></a>00020 <span class="preprocessor">#include &lt;math.h&gt;</span>
+<a name="l00021"></a>00021 <span class="preprocessor">#include &lt;string.h&gt;</span>
+<a name="l00022"></a>00022 
+<a name="l00023"></a>00023 
+<a name="l00024"></a>00024 
+<a name="l00025"></a>00025 <span class="comment">// Définitions des constantes du programme :</span>
+<a name="l00031"></a><a class="code" href="constantes_8h.html#a6068a247ff9ece1b0a9773c58144906c">00031</a> <span class="comment"></span><span class="preprocessor">#define LARGEUR_FENETRE 800</span>
+<a name="l00032"></a>00032 <span class="preprocessor"></span>
+<a name="l00033"></a>00033 
+<a name="l00039"></a><a class="code" href="constantes_8h.html#afd1a1e285af564b849b17498e82e1a41">00039</a> <span class="preprocessor">#define HAUTEUR_FENETRE 500</span>
+<a name="l00040"></a>00040 <span class="preprocessor"></span>
+<a name="l00041"></a>00041 
+<a name="l00047"></a><a class="code" href="constantes_8h.html#abff55699e9fdf03f67a0279aa5c84ebe">00047</a> <span class="preprocessor">#define DIM_PLATEAU 6</span>
+<a name="l00048"></a>00048 <span class="preprocessor"></span>
+<a name="l00049"></a>00049 
+<a name="l00055"></a><a class="code" href="constantes_8h.html#a256cf95d6901a0a5cb59dbfe010ea629">00055</a> <span class="preprocessor">#define TAILLE_EMPLACEMENT 50</span>
+<a name="l00056"></a>00056 <span class="preprocessor"></span>
+<a name="l00057"></a>00057 
+<a name="l00063"></a><a class="code" href="constantes_8h.html#a1ebe07e8d51bd8a62e93b465d5c1161c">00063</a> <span class="preprocessor">#define RAYON_BILLE 17</span>
+<a name="l00064"></a>00064 <span class="preprocessor"></span>
+<a name="l00065"></a>00065 
+<a name="l00071"></a>00071 <span class="preprocessor">#define NB_COUP_MAX (DIM_PLATEAU*DIM_PLATEAU)</span>
+<a name="l00072"></a>00072 <span class="preprocessor"></span>
+<a name="l00073"></a>00073 
+<a name="l00079"></a><a class="code" href="constantes_8h.html#a48f2466e604fccdb4211b8d5c7936077">00079</a> <span class="preprocessor">#define ABS_PLATEAU (LARGEUR_FENETRE/2 - (DIM_PLATEAU*TAILLE_EMPLACEMENT)/2)</span>
+<a name="l00080"></a>00080 <span class="preprocessor"></span>
+<a name="l00081"></a>00081 
+<a name="l00087"></a><a class="code" href="constantes_8h.html#a7157aadd4e19b59cb629aea949da774b">00087</a> <span class="preprocessor">#define ORD_PLATEAU (HAUTEUR_FENETRE/2 - (DIM_PLATEAU*TAILLE_EMPLACEMENT)/2)</span>
+<a name="l00088"></a>00088 <span class="preprocessor"></span>
+<a name="l00089"></a>00089 
+<a name="l00095"></a><a class="code" href="constantes_8h.html#a1aa17778f2187f12dea9306c3388cbf2">00095</a> <span class="preprocessor">#define BAS_FENETRE (HAUTEUR_FENETRE-25)</span>
+<a name="l00096"></a>00096 <span class="preprocessor"></span>
+<a name="l00097"></a>00097 <span class="comment">// Définitions des énumerations du programme</span>
+<a name="l00102"></a><a class="code" href="constantes_8h.html#a50c2270bee9c93a5fee9353a453ade4d">00102</a> <span class="comment"></span><span class="keyword">enum</span> <a class="code" href="constantes_8h.html#a50c2270bee9c93a5fee9353a453ade4d" title="Représente le contenue d une case.">contenuCase</a>{
+<a name="l00103"></a><a class="code" href="constantes_8h.html#a50c2270bee9c93a5fee9353a453ade4da59e3323a198f0162330111165caaf367">00103</a>         <a class="code" href="constantes_8h.html#a50c2270bee9c93a5fee9353a453ade4da59e3323a198f0162330111165caaf367">NOIR</a>,
+<a name="l00104"></a><a class="code" href="constantes_8h.html#a50c2270bee9c93a5fee9353a453ade4da35653913ced93d8199f0378ec538a0c7">00104</a>         <a class="code" href="constantes_8h.html#a50c2270bee9c93a5fee9353a453ade4da35653913ced93d8199f0378ec538a0c7">BLANC</a>,
+<a name="l00105"></a><a class="code" href="constantes_8h.html#a50c2270bee9c93a5fee9353a453ade4dad4686f4f969d0e851d9170c09a89a837">00105</a>         <a class="code" href="constantes_8h.html#a50c2270bee9c93a5fee9353a453ade4dad4686f4f969d0e851d9170c09a89a837">VIDE</a>
+<a name="l00106"></a>00106  };
+<a name="l00107"></a>00107 
+<a name="l00112"></a><a class="code" href="constantes_8h.html#a957d49625acff3240684bc203fdb2be9">00112</a> <span class="keyword">enum</span> <a class="code" href="constantes_8h.html#a957d49625acff3240684bc203fdb2be9">partiePlateau</a>
+<a name="l00113"></a>00113 {
+<a name="l00114"></a><a class="code" href="constantes_8h.html#a957d49625acff3240684bc203fdb2be9a4dd42713302f94f70f81a7fc5ea8d471">00114</a>         <a class="code" href="constantes_8h.html#a957d49625acff3240684bc203fdb2be9a4dd42713302f94f70f81a7fc5ea8d471">HAUT_GAUCHE</a>,
+<a name="l00115"></a><a class="code" href="constantes_8h.html#a957d49625acff3240684bc203fdb2be9ae03ba231106011b859289ef76eb6fb4c">00115</a>         <a class="code" href="constantes_8h.html#a957d49625acff3240684bc203fdb2be9ae03ba231106011b859289ef76eb6fb4c">HAUT_DROITE</a>, 
+<a name="l00116"></a><a class="code" href="constantes_8h.html#a957d49625acff3240684bc203fdb2be9a5ec7ee2eeade21efcc17a56557f9eec8">00116</a>         <a class="code" href="constantes_8h.html#a957d49625acff3240684bc203fdb2be9a5ec7ee2eeade21efcc17a56557f9eec8">BAS_GAUCHE</a>,
+<a name="l00117"></a><a class="code" href="constantes_8h.html#a957d49625acff3240684bc203fdb2be9a5abf263122ab0d263c9ec808386960f8">00117</a>         <a class="code" href="constantes_8h.html#a957d49625acff3240684bc203fdb2be9a5abf263122ab0d263c9ec808386960f8">BAS_DROITE</a>
+<a name="l00118"></a>00118 }; 
+<a name="l00119"></a>00119 
+<a name="l00124"></a><a class="code" href="constantes_8h.html#adfeae4fcbc73ce28fdbb0b2e9e0aa5dd">00124</a> <span class="keyword">enum</span> <a class="code" href="constantes_8h.html#adfeae4fcbc73ce28fdbb0b2e9e0aa5dd" title="Représente le gagnant.">gagnant</a>
+<a name="l00125"></a>00125 {
+<a name="l00126"></a><a class="code" href="constantes_8h.html#adfeae4fcbc73ce28fdbb0b2e9e0aa5dda7a14fc427a3e7002251f769b8e99c031">00126</a>         <a class="code" href="constantes_8h.html#adfeae4fcbc73ce28fdbb0b2e9e0aa5dda7a14fc427a3e7002251f769b8e99c031">NOIR_GAGNANT</a>,
+<a name="l00127"></a><a class="code" href="constantes_8h.html#adfeae4fcbc73ce28fdbb0b2e9e0aa5ddafa740ceaf24189b31027f49c3ff00bd7">00127</a>         <a class="code" href="constantes_8h.html#adfeae4fcbc73ce28fdbb0b2e9e0aa5ddafa740ceaf24189b31027f49c3ff00bd7">BLANC_GAGNANT</a>,
+<a name="l00128"></a><a class="code" href="constantes_8h.html#adfeae4fcbc73ce28fdbb0b2e9e0aa5ddafd9621762996b1efb156550dc37b2be4">00128</a>         <a class="code" href="constantes_8h.html#adfeae4fcbc73ce28fdbb0b2e9e0aa5ddafd9621762996b1efb156550dc37b2be4">PERSONNE</a>, 
+<a name="l00129"></a><a class="code" href="constantes_8h.html#adfeae4fcbc73ce28fdbb0b2e9e0aa5dda5ce063289dc687d6c5ea8cddc448f583">00129</a>         <a class="code" href="constantes_8h.html#adfeae4fcbc73ce28fdbb0b2e9e0aa5dda5ce063289dc687d6c5ea8cddc448f583">EGALITE</a>
+<a name="l00130"></a>00130 }; 
+<a name="l00131"></a>00131 
+<a name="l00136"></a><a class="code" href="constantes_8h.html#aa65e3b592c27609a542733310b34f5d9">00136</a> <span class="keyword">enum</span> <a class="code" href="constantes_8h.html#aa65e3b592c27609a542733310b34f5d9" title="Représente le sens de la rotation.">sens</a>
+<a name="l00137"></a>00137 {
+<a name="l00138"></a><a class="code" href="constantes_8h.html#aa65e3b592c27609a542733310b34f5d9a256d855045cd690afdadf5fd09db25cb">00138</a>         <a class="code" href="constantes_8h.html#aa65e3b592c27609a542733310b34f5d9a256d855045cd690afdadf5fd09db25cb">SENS_HORAIRE</a>,
+<a name="l00139"></a><a class="code" href="constantes_8h.html#aa65e3b592c27609a542733310b34f5d9ad231635c9a6617d63f6e644ffba30370">00139</a>         <a class="code" href="constantes_8h.html#aa65e3b592c27609a542733310b34f5d9ad231635c9a6617d63f6e644ffba30370">SENS_TRIGONOMETRIQUE</a>
+<a name="l00140"></a>00140 }; 
+<a name="l00141"></a>00141 
+<a name="l00146"></a><a class="code" href="constantes_8h.html#a905479d79c2aa8410d2fc374bc75cc5b">00146</a> <span class="keyword">enum</span> <a class="code" href="constantes_8h.html#a905479d79c2aa8410d2fc374bc75cc5b" title="Représente un item du menu.">menu</a>
+<a name="l00147"></a>00147 {
+<a name="l00148"></a><a class="code" href="constantes_8h.html#a905479d79c2aa8410d2fc374bc75cc5ba70b100093f9f5e4ec3406859cc808132">00148</a>         <a class="code" href="constantes_8h.html#a905479d79c2aa8410d2fc374bc75cc5ba70b100093f9f5e4ec3406859cc808132">RIEN</a>,
+<a name="l00149"></a><a class="code" href="constantes_8h.html#a905479d79c2aa8410d2fc374bc75cc5bab5ff09f1f071ccf03e71e867b696f7a0">00149</a>         <a class="code" href="constantes_8h.html#a905479d79c2aa8410d2fc374bc75cc5bab5ff09f1f071ccf03e71e867b696f7a0">MODE_UN_JOUEUR</a>,
+<a name="l00150"></a><a class="code" href="constantes_8h.html#a905479d79c2aa8410d2fc374bc75cc5babf4d263385fdac45dc9057141dfc05f1">00150</a>         <a class="code" href="constantes_8h.html#a905479d79c2aa8410d2fc374bc75cc5babf4d263385fdac45dc9057141dfc05f1">MODE_DEUX_JOUEUR</a>,
+<a name="l00151"></a><a class="code" href="constantes_8h.html#a905479d79c2aa8410d2fc374bc75cc5ba34fee33b89d4454c2a79b0ee5f84b2a3">00151</a>         <a class="code" href="constantes_8h.html#a905479d79c2aa8410d2fc374bc75cc5ba34fee33b89d4454c2a79b0ee5f84b2a3">REGLE</a>,
+<a name="l00152"></a><a class="code" href="constantes_8h.html#a905479d79c2aa8410d2fc374bc75cc5ba823bd8d0ae9f7847c8e13b3d6fdb0d4b">00152</a>         <a class="code" href="constantes_8h.html#a905479d79c2aa8410d2fc374bc75cc5ba823bd8d0ae9f7847c8e13b3d6fdb0d4b">PROPOS</a>,
+<a name="l00153"></a><a class="code" href="constantes_8h.html#a905479d79c2aa8410d2fc374bc75cc5ba8e639928892ca56805cccf6606dcff63">00153</a>         <a class="code" href="constantes_8h.html#a905479d79c2aa8410d2fc374bc75cc5ba8e639928892ca56805cccf6606dcff63">QUITTER</a>
+<a name="l00154"></a>00154 };
+<a name="l00155"></a>00155 
+<a name="l00156"></a>00156 <span class="comment">// Définitions de notre plateau de jeu</span>
+<a name="l00161"></a><a class="code" href="constantes_8h.html#ac19c17e9f0f0eeec3f3c11b052cfeb47">00161</a> <span class="comment"></span><span class="keyword">typedef</span> <span class="keywordtype">int</span> <a class="code" href="constantes_8h.html#ac19c17e9f0f0eeec3f3c11b052cfeb47" title="Le Plateau du jeu est un tableau à deux dimensions de DIM_PLATEAU*DIM_PLATEAU cases.">Plateau</a>[<a class="code" href="constantes_8h.html#abff55699e9fdf03f67a0279aa5c84ebe">DIM_PLATEAU</a>][<a class="code" href="constantes_8h.html#abff55699e9fdf03f67a0279aa5c84ebe">DIM_PLATEAU</a>];
+<a name="l00162"></a>00162 
+<a name="l00163"></a>00163 <span class="preprocessor">#endif // DEF_CONSTANTES</span>
+</pre></div></div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Dimanche Mars 16 2014 23:07:26 pour Pentago par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

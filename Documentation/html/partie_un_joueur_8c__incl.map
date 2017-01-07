@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$partie_un_joueur_8h.html" title="définitions des prototypes des fonctions utilisé pour le mode 1 joueurs" alt="" coords="223,83,404,112"/>
+<area shape="rect" id="node23" href="$fonctions_plateau_8h.html" title="définitions des prototypes des fonctions relative au plateau" alt="" coords="428,83,620,112"/>
+<area shape="rect" id="node5" href="$constantes_8h.html" title="définitions de constantes" alt="" coords="371,160,467,189"/>
+</map>

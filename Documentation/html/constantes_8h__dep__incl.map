@@ -1,0 +1,13 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$fonctions_affichage_8h.html" title="définitions des prototypes des fonctions relatives à l&#39;affichage et aux traitement des menus..." alt="" coords="159,83,348,112"/>
+<area shape="rect" id="node9" href="$fonctions_i_a_8h.html" title="définitions des prototypes des fonctions relatives à l&#39;inteligence artificielle" alt="" coords="372,83,521,112"/>
+<area shape="rect" id="node13" href="$fonctions_plateau_8h.html" title="définitions des prototypes des fonctions relative au plateau" alt="" coords="761,83,940,112"/>
+<area shape="rect" id="node21" href="$partie_deux_joueurs_8h.html" title="définitions des prototypes des fonctions utilisé pour le mode 2 joueurs" alt="" coords="545,83,737,112"/>
+<area shape="rect" id="node24" href="$partie_un_joueur_8h.html" title="définitions des prototypes des fonctions utilisé pour le mode 1 joueurs" alt="" coords="964,83,1135,112"/>
+<area shape="rect" id="node5" href="$fonctions_affichage_8c.html" title="fonctions relatives à l&#39;affichage et aux traitement des menus" alt="" coords="5,160,195,189"/>
+<area shape="rect" id="node7" href="$main_8c.html" title="fonction principale du jeu" alt="" coords="219,160,328,189"/>
+<area shape="rect" id="node11" href="$fonctions_i_a_8c.html" title="fonctions relatives à l&#39;inteligence artificielle" alt="" coords="372,160,521,189"/>
+<area shape="rect" id="node15" href="$fonctions_plateau_8c.html" title="fonctions relatives au plateau" alt="" coords="761,160,940,189"/>
+<area shape="rect" id="node17" href="$partie_deux_joueurs_8c.html" title="fonctions gérant le mode 2 joueurs" alt="" coords="545,160,737,189"/>
+<area shape="rect" id="node19" href="$partie_un_joueur_8c.html" title="fonctions gérant le mode 1 joueur" alt="" coords="964,160,1135,189"/>
+</map>

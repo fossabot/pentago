@@ -1,0 +1,232 @@
+/*
+jeu.c
+-----
+
+Rôle : fonctions gérant l'affichage d'éléments
+*/
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+#include <stdbool.h>
+#include <SDL/SDL.h>
+#include <SDL_ttf.h>
+
+#include "headers/constantes.h"
+#include "headers/fonctionsAffichage.h"
+
+void afficheFin (int nom_gagnant, int nombre_coups, TTF_Font* police, SDL_Surface* texte, SDL_Color couleur, SDL_Surface *ecran)
+{
+	SDL_Surface* choix;
+	SDL_Rect positionStatiqueChoix;
+	positionStatiqueChoix.x=10;
+	positionStatiqueChoix.y=30;
+
+	switch(nom_gagnant)
+	{
+		
+		SDL_Rect positionStatique;
+		positionStatique.x = 50;
+		positionStatique.y = 50;
+		
+		
+		case BLANC_GAGNANT:
+			
+		texte = TTF_RenderText_Blended(police, "Le joueur blanc a gagne", couleur);
+		SDL_BlitSurface(texte, NULL, ecran, &positionStatique);;
+		//texte = TTF_RenderText_Blended(police, "vous avez gagné en %d coups ", couleur);
+				
+			break;
+		case NOIR_GAGNANT:
+
+		texte = TTF_RenderText_Blended(police, "Le joueur noir a gagne", couleur);
+		SDL_BlitSurface(texte, NULL, ecran, &positionStatique);
+
+		//texte = TTF_RenderText_Blended(police, "vous avez gagné en %d coups ", couleur);
+		
+			break;
+		case EGALITE:
+		
+		texte = TTF_RenderText_Blended(police, "Egalité", couleur);
+		SDL_BlitSurface(texte, NULL, ecran, &positionStatique);
+                break;
+           
+		}
+		
+		choix = TTF_RenderText_Blended(police, "rejouer quitter", couleur);
+		SDL_BlitSurface(choix, NULL, ecran, &positionStatiqueChoix);
+		SDL_FreeSurface(choix);
+	    SDL_FreeSurface(texte);
+
+	}
+
+	//On affiche une option pour rejouer
+	//On affiche une option pour retourner au menu
+
+short afficheRegles (SDL_Surface *ecran)
+{	
+	//SDL_Surface *ecran = NULL;
+    SDL_Rect position;
+    
+    SDL_Init(SDL_INIT_VIDEO); // initialisation de la SDL
+    TTF_Init();
+
+	SDL_Color couleurNoir = {0, 0, 0};
+	TTF_Font *police = NULL;
+	police = TTF_OpenFont("ressources/SuperRetro.ttf", 20);
+	
+	SDL_Surface* regles = NULL;
+	regles= IMG_Load("ressources/regles.jpg");
+	
+	SDL_Rect posRegles;
+	posRegles.x = 0;
+	posRegles.y = 0;
+
+	SDL_Surface* tabOptionsMenu[1] = {0};
+	tabOptionsMenu[0] = TTF_RenderText_Blended(police, "Retour", couleurNoir);
+	
+	SDL_Rect posTabOptionsMenu[1]={0};
+	posTabOptionsMenu[0].x = 0;
+	posTabOptionsMenu[0].y = 0;
+
+    ecran = SDL_SetVideoMode(LARGEUR_FENETRE, HAUTEUR_FENETRE, 32, SDL_HWSURFACE | SDL_DOUBLEBUF);
+	SDL_WM_SetCaption("Pentago", NULL);
+
+    // Variables pour gérer le nombre d'images par secondes
+    int now=0, before=0, interval=33;
+    SDL_Event event;
+
+	bool continuer=true;
+	int valeurChoixMenu=0;
+
+    while (continuer) // Boucle infinie qui gère les événements
+    {
+        SDL_WaitEvent(&event);
+        switch(event.type)
+        {
+            case SDL_QUIT:
+                continuer = false;
+                break;
+            case SDL_KEYDOWN:
+                switch(event.key.keysym.sym)
+                {
+                    case SDLK_ESCAPE: // Veut arrêter le jeu
+                        continuer = false;
+                        break;
+                    case SDLK_RETURN:
+						break;
+
+                }
+				break;
+			case SDL_MOUSEBUTTONUP:
+				if (event.button.button == SDL_BUTTON_LEFT){
+					valeurChoixMenu = choixMenu(event.button.x, event.button.y, posTabOptionsMenu);
+					printf("%d", valeurChoixMenu);
+				}
+				break;
+        }
+
+		switch(valeurChoixMenu)
+		{
+			case 1:	continuer=false;
+					break;				
+		}
+
+        // Effacement de l'écran
+        SDL_FillRect(ecran, NULL, SDL_MapRGB(ecran->format, 0, 0, 0));
+        
+        SDL_BlitSurface(regles, NULL, ecran, &posRegles);
+        SDL_BlitSurface(tabOptionsMenu[0], NULL, ecran, &posTabOptionsMenu[0]);
+
+        SDL_Flip(ecran);
+    }
+
+    return EXIT_SUCCESS;
+	
+}
+//fonction traitant le fin du jeu
+short traiteFin(int absClic, int ordClic)
+{
+	//si on est dans le rejouer
+	if( (absClic>10) && (absClic<100) && (ordClic >30) &&(ordClic<50))
+	{
+		
+		return(MODE_DEUX_JOUEUR);
+	}
+	//si on est dans le quitter
+	if( (absClic>110) && (absClic<210) && (ordClic>30) && (ordClic<50) )
+	{
+		
+			return(0);	
+	}
+		
+		return(-1);
+		
+}
+
+short choixMenu (int absClic,int ordClic, SDL_Rect posTabChoixMenu[])
+{
+	int choix;
+	choix=RIEN;
+	
+	if( (absClic > posTabChoixMenu[0].x && absClic < posTabChoixMenu[0].x + posTabChoixMenu[0].w) &&
+	(ordClic > posTabChoixMenu[0].y && ordClic < posTabChoixMenu[0].y + posTabChoixMenu[0].h ) )
+	{
+		choix=MODE_UN_JOUEUR;
+	}
+	else if( (absClic > posTabChoixMenu[1].x && absClic < posTabChoixMenu[1].x + posTabChoixMenu[1].w) &&
+	(ordClic > posTabChoixMenu[1].y && ordClic < posTabChoixMenu[1].y + posTabChoixMenu[1].h ) )
+	{
+		choix=MODE_DEUX_JOUEUR;
+	}
+	else if( (absClic > posTabChoixMenu[2].x && absClic < posTabChoixMenu[2].x + posTabChoixMenu[2].w) &&
+	(ordClic > posTabChoixMenu[2].y && ordClic < posTabChoixMenu[2].y + posTabChoixMenu[2].h ) )
+	{
+		choix=REGLE;
+	}
+	else if( (absClic > posTabChoixMenu[3].x && absClic < posTabChoixMenu[3].x + posTabChoixMenu[3].w) &&
+	(ordClic > posTabChoixMenu[3].y && ordClic < posTabChoixMenu[3].y + posTabChoixMenu[3].h ) )
+	{
+		choix=QUITTER;
+	}
+	return(choix);
+}
+
+void afficheMenuMiniature(SDL_Surface* ecran, SDL_Surface* tabMenuMiniature[], SDL_Rect posTabMenuMiniature[])
+{
+	SDL_BlitSurface(tabMenuMiniature[0], NULL, ecran, &posTabMenuMiniature[0]);
+	SDL_BlitSurface(tabMenuMiniature[1], NULL, ecran, &posTabMenuMiniature[1]);
+	SDL_BlitSurface(tabMenuMiniature[2], NULL, ecran, &posTabMenuMiniature[2]);
+	SDL_BlitSurface(tabMenuMiniature[3], NULL, ecran, &posTabMenuMiniature[3]);
+}
+
+short traiteMenuMiniature(int absClic, int ordClic,SDL_Surface *ecran)
+{
+	//si on est dans la zone ou il y a le menu miniature
+	if( (ordClic>BAS_FENETRE)&&(ordClic<HAUTEUR_FENETRE))
+	{
+		//si on est sur le mode Un joueur
+		if(absClic<225)
+		{
+			return(MODE_UN_JOUEUR);
+		}
+		//si on est sur le mode Un joueur
+		if ( (absClic>260)&&(absClic<533) )
+		{
+			return(MODE_DEUX_JOUEUR);
+		}
+		//si on est sur regles
+		if ( (absClic>572)&&(absClic<668) )
+		{
+			afficheRegles (ecran);
+			return(-1);
+		}
+		if (absClic>692)
+		{
+			
+			return(0);
+		}
+		
+	}
+	return(-1);
+}

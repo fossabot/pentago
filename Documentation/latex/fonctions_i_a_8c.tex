@@ -1,0 +1,239 @@
+\hypertarget{fonctions_i_a_8c}{\section{\-Référence du fichier sources/fonctions\-I\-A.c}
+\label{fonctions_i_a_8c}\index{sources/fonctions\-I\-A.\-c@{sources/fonctions\-I\-A.\-c}}
+}
+
+
+fonctions relatives à l'inteligence artificielle  
+
+
+{\ttfamily \#include \char`\"{}../headers/fonctions\-I\-A.\-h\char`\"{}}\*
+\-Graphe des dépendances par inclusion de fonctions\-I\-A.\-c\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fonctions_i_a_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{\-Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+short int \hyperlink{fonctions_i_a_8c_ae8b2b1efa750c376aeff3f38f665f76d}{evaluation\-Plateau} (\hyperlink{constantes_8h_ac19c17e9f0f0eeec3f3c11b052cfeb47}{\-Plateau} \-P)
+\begin{DoxyCompactList}\small\item\em fonction evaluant si le plateau est plus ou moin favorable à l'ordi \end{DoxyCompactList}\item 
+short int \hyperlink{fonctions_i_a_8c_a8d45a9c590e7a75d0b34a4f61c4e9d0b}{calcul\-Gain} (\hyperlink{constantes_8h_ac19c17e9f0f0eeec3f3c11b052cfeb47}{\-Plateau} \-P, short int couleur\-Analyse)
+\begin{DoxyCompactList}\small\item\em analyse le plateau pour une couleur \end{DoxyCompactList}\item 
+bool \hyperlink{fonctions_i_a_8c_a395886ef8e187f1fcf83ec3dfba2caf9}{plateau\-Vide} (\hyperlink{constantes_8h_ac19c17e9f0f0eeec3f3c11b052cfeb47}{\-Plateau} \-P, int partie\-Tableau)
+\begin{DoxyCompactList}\small\item\em determine si une partie de plateau est vide ou non \end{DoxyCompactList}\item 
+short int \hyperlink{fonctions_i_a_8c_a1416d179ad4f5765bbb790a77052b966}{alpha\-Beta} (\hyperlink{constantes_8h_ac19c17e9f0f0eeec3f3c11b052cfeb47}{\-Plateau} \-P, short int alpha, short int beta, short int profondeur)
+\begin{DoxyCompactList}\small\item\em fonction recherchant le meilleur coup possible pour l'ordinateur en optimisant les passages dans l'arbre récursif \end{DoxyCompactList}\item 
+void \hyperlink{fonctions_i_a_8c_a0e4cfe307082f42b29068d14fa592ccd}{meilleur\-Coup} (\hyperlink{constantes_8h_ac19c17e9f0f0eeec3f3c11b052cfeb47}{\-Plateau} \-P, short int couleur\-Analyse, \hyperlink{struct_coup}{\-Coup} $\ast$meilleur)
+\begin{DoxyCompactList}\small\item\em détermine le meilleur coups potentiel à jouer par l'ia \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Description détaillée}
+fonctions relatives à l'inteligence artificielle 
+
+\subsection{\-Documentation des fonctions}
+\hypertarget{fonctions_i_a_8c_a1416d179ad4f5765bbb790a77052b966}{\index{fonctions\-I\-A.\-c@{fonctions\-I\-A.\-c}!alpha\-Beta@{alpha\-Beta}}
+\index{alpha\-Beta@{alpha\-Beta}!fonctionsIA.c@{fonctions\-I\-A.\-c}}
+\subsubsection[{alpha\-Beta}]{\setlength{\rightskip}{0pt plus 5cm}short int {\bf alpha\-Beta} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Plateau}}]{\-P, }
+\item[{short int}]{alpha, }
+\item[{short int}]{beta, }
+\item[{short int}]{nombre\-\_\-coups}
+\end{DoxyParamCaption}
+)}}\label{fonctions_i_a_8c_a1416d179ad4f5765bbb790a77052b966}
+
+
+fonction recherchant le meilleur coup possible pour l'ordinateur en optimisant les passages dans l'arbre récursif 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em \-P} & le plateau à évaluer \\
+\hline
+{\em alpha} & sert à la coupure dans les noeud max \\
+\hline
+{\em beta} & sert à la coupure dans les noeud min \\
+\hline
+{\em nombre\-\_\-coups} & pour la profondeur de l'arbre\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Renvoie}
+retourne le meilleur coup possible pour l'ordi 
+\end{DoxyReturn}
+
+
+\-Voici le graphe d'appel pour cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fonctions_i_a_8c_a1416d179ad4f5765bbb790a77052b966_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fonctions_i_a_8c_a1416d179ad4f5765bbb790a77052b966_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{fonctions_i_a_8c_a8d45a9c590e7a75d0b34a4f61c4e9d0b}{\index{fonctions\-I\-A.\-c@{fonctions\-I\-A.\-c}!calcul\-Gain@{calcul\-Gain}}
+\index{calcul\-Gain@{calcul\-Gain}!fonctionsIA.c@{fonctions\-I\-A.\-c}}
+\subsubsection[{calcul\-Gain}]{\setlength{\rightskip}{0pt plus 5cm}short int {\bf calcul\-Gain} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Plateau}}]{\-P, }
+\item[{short int}]{couleur\-Analyse}
+\end{DoxyParamCaption}
+)}}\label{fonctions_i_a_8c_a8d45a9c590e7a75d0b34a4f61c4e9d0b}
+
+
+analyse le plateau pour une couleur 
+
+short int \hyperlink{fonctions_i_a_8h_a8d45a9c590e7a75d0b34a4f61c4e9d0b}{calcul\-Gain(\-Plateau P, short int couleur\-Analyse)} 
+\begin{DoxyParams}{\-Paramètres}
+{\em \-P} & le plateau à évaluer \\
+\hline
+{\em couleur\-Analyse} & represente la couleur à analyser \\
+\hline
+\end{DoxyParams}
+
+
+\-Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fonctions_i_a_8c_a8d45a9c590e7a75d0b34a4f61c4e9d0b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{fonctions_i_a_8c_ae8b2b1efa750c376aeff3f38f665f76d}{\index{fonctions\-I\-A.\-c@{fonctions\-I\-A.\-c}!evaluation\-Plateau@{evaluation\-Plateau}}
+\index{evaluation\-Plateau@{evaluation\-Plateau}!fonctionsIA.c@{fonctions\-I\-A.\-c}}
+\subsubsection[{evaluation\-Plateau}]{\setlength{\rightskip}{0pt plus 5cm}short int {\bf evaluation\-Plateau} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Plateau}}]{\-P}
+\end{DoxyParamCaption}
+)}}\label{fonctions_i_a_8c_ae8b2b1efa750c376aeff3f38f665f76d}
+
+
+fonction evaluant si le plateau est plus ou moin favorable à l'ordi 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em \-P} & le plateau à évaluer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Renvoie}
+un nombre qui représente le gain 
+\end{DoxyReturn}
+
+
+\-Voici le graphe d'appel pour cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{fonctions_i_a_8c_ae8b2b1efa750c376aeff3f38f665f76d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fonctions_i_a_8c_ae8b2b1efa750c376aeff3f38f665f76d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{fonctions_i_a_8c_a0e4cfe307082f42b29068d14fa592ccd}{\index{fonctions\-I\-A.\-c@{fonctions\-I\-A.\-c}!meilleur\-Coup@{meilleur\-Coup}}
+\index{meilleur\-Coup@{meilleur\-Coup}!fonctionsIA.c@{fonctions\-I\-A.\-c}}
+\subsubsection[{meilleur\-Coup}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf meilleur\-Coup} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Plateau}}]{\-P, }
+\item[{short int}]{couleur\-Analyse, }
+\item[{{\bf \-Coup} $\ast$}]{meilleur}
+\end{DoxyParamCaption}
+)}}\label{fonctions_i_a_8c_a0e4cfe307082f42b29068d14fa592ccd}
+
+
+détermine le meilleur coups potentiel à jouer par l'ia 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em \-P} & le plateau à évaluer \\
+\hline
+{\em couleur\-Analyse} & la couleur que l'on anamyse \\
+\hline
+{\em meilleur} & le meileur coup possible \\
+\hline
+\end{DoxyParams}
+
+
+\-Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fonctions_i_a_8c_a0e4cfe307082f42b29068d14fa592ccd_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{fonctions_i_a_8c_a395886ef8e187f1fcf83ec3dfba2caf9}{\index{fonctions\-I\-A.\-c@{fonctions\-I\-A.\-c}!plateau\-Vide@{plateau\-Vide}}
+\index{plateau\-Vide@{plateau\-Vide}!fonctionsIA.c@{fonctions\-I\-A.\-c}}
+\subsubsection[{plateau\-Vide}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf plateau\-Vide} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Plateau}}]{\-P, }
+\item[{int}]{partie\-Tableau}
+\end{DoxyParamCaption}
+)}}\label{fonctions_i_a_8c_a395886ef8e187f1fcf83ec3dfba2caf9}
+
+
+determine si une partie de plateau est vide ou non 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em \-P} & le plateau à évaluer \\
+\hline
+{\em partie\-Tableau} & nombre representant la partie du tablea \\
+\hline
+\end{DoxyParams}
+
+
+\-Voici le graphe d'appel pour cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{fonctions_i_a_8c_a395886ef8e187f1fcf83ec3dfba2caf9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{fonctions_i_a_8c_a395886ef8e187f1fcf83ec3dfba2caf9_icgraph}
+\end{center}
+\end{figure}
+
+

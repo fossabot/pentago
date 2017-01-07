@@ -1,0 +1,376 @@
+\hypertarget{fonctions_affichage_8h}{\section{\-Référence du fichier headers/fonctions\-Affichage.h}
+\label{fonctions_affichage_8h}\index{headers/fonctions\-Affichage.\-h@{headers/fonctions\-Affichage.\-h}}
+}
+
+
+définitions des prototypes des fonctions relatives à l'affichage et aux traitement des menus  
+
+
+{\ttfamily \#include \char`\"{}constantes.\-h\char`\"{}}\*
+\-Graphe des dépendances par inclusion de fonctions\-Affichage.\-h\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fonctions_affichage_8h__incl}
+\end{center}
+\end{figure}
+\-Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{fonctions_affichage_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{\-Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+short \hyperlink{fonctions_affichage_8h_aefaab0a4a9e4ccb284e6ce210fb6973b}{choix\-Menu} (int abs\-Clic, int ord\-Clic, \-S\-D\-L\-\_\-\-Rect pos\-Tab\-Choix\-Menu\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em détermine si le joueur clique sur un des choix du menu \end{DoxyCompactList}\item 
+short \hyperlink{fonctions_affichage_8h_ad5c598ce2c6742ec4c3e771488987abe}{affiche\-Regles} (\-S\-D\-L\-\_\-\-Surface $\ast$ecran)
+\begin{DoxyCompactList}\small\item\em \-Affiche les rêgles du jeu. \end{DoxyCompactList}\item 
+short \hyperlink{fonctions_affichage_8h_a830a6d65d1a989f174c3bcde5ae69151}{affiche\-Propos} (\-S\-D\-L\-\_\-\-Surface $\ast$ecran)
+\begin{DoxyCompactList}\small\item\em \-Affiche les information sur le jeu. \end{DoxyCompactList}\item 
+void \hyperlink{fonctions_affichage_8h_a6de5a4b9281294c56a4bd7254cdb481d}{affiche\-Fin} (int nom\-\_\-gagnant, int nombre\-\_\-coups, \-T\-T\-F\-\_\-\-Font $\ast$police, \-S\-D\-L\-\_\-\-Surface $\ast$texte, \-S\-D\-L\-\_\-\-Color couleur, \-S\-D\-L\-\_\-\-Surface $\ast$ecran)
+\begin{DoxyCompactList}\small\item\em affiche quand une partie est terminée le nom du gagnant et le nombre de coup joué par celui ci \end{DoxyCompactList}\item 
+void \hyperlink{fonctions_affichage_8h_a805c8a6f72037e8a2d3649e1ff874fa0}{affiche\-Menu\-Miniature} (\-S\-D\-L\-\_\-\-Surface $\ast$ecran, \-S\-D\-L\-\_\-\-Surface $\ast$tab\-Menu\-Miniature\mbox{[}$\,$\mbox{]}, \-S\-D\-L\-\_\-\-Rect pos\-Tab\-Menu\-Miniature\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em affiche le menu miniature situé en bas de la fenêtre \end{DoxyCompactList}\item 
+short \hyperlink{fonctions_affichage_8h_a48262da5b852d7d777c20285f2f0b99a}{traite\-Menu\-Miniature} (int abs\-Clic, int ord\-Clic, \-S\-D\-L\-\_\-\-Surface $\ast$ecran, int partie)
+\begin{DoxyCompactList}\small\item\em détermine si le joueur clique sur un des item du menu miniature \end{DoxyCompactList}\item 
+void \hyperlink{fonctions_affichage_8h_aa0b97452ac0e386637b196b6b8105c7d}{init\-Menu\-Miniature} (int partie, \-S\-D\-L\-\_\-\-Surface $\ast$tab\-Menu\-Miniature\mbox{[}$\,$\mbox{]}, \-T\-T\-F\-\_\-\-Font $\ast$police, \-S\-D\-L\-\_\-\-Color couleur)
+\begin{DoxyCompactList}\small\item\em initialise le menu miniature selon la partie joué \end{DoxyCompactList}\item 
+void \hyperlink{fonctions_affichage_8h_a6cede375026585c570c284965c06f83a}{affiche\-Joueur} (\-S\-D\-L\-\_\-\-Surface $\ast$ecran, int nb\-\_\-coups, \-T\-T\-F\-\_\-\-Font $\ast$police, \-S\-D\-L\-\_\-\-Color couleur)
+\begin{DoxyCompactList}\small\item\em fonction affichant le joueur qui est en train de jouer \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Description détaillée}
+définitions des prototypes des fonctions relatives à l'affichage et aux traitement des menus 
+
+\subsection{\-Documentation des fonctions}
+\hypertarget{fonctions_affichage_8h_a6de5a4b9281294c56a4bd7254cdb481d}{\index{fonctions\-Affichage.\-h@{fonctions\-Affichage.\-h}!affiche\-Fin@{affiche\-Fin}}
+\index{affiche\-Fin@{affiche\-Fin}!fonctionsAffichage.h@{fonctions\-Affichage.\-h}}
+\subsubsection[{affiche\-Fin}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf affiche\-Fin} (
+\begin{DoxyParamCaption}
+\item[{int}]{nom\-\_\-gagnant, }
+\item[{int}]{nombre\-\_\-coups, }
+\item[{\-T\-T\-F\-\_\-\-Font $\ast$}]{police, }
+\item[{\-S\-D\-L\-\_\-\-Surface $\ast$}]{texte, }
+\item[{\-S\-D\-L\-\_\-\-Color}]{couleur, }
+\item[{\-S\-D\-L\-\_\-\-Surface $\ast$}]{ecran}
+\end{DoxyParamCaption}
+)}}\label{fonctions_affichage_8h_a6de5a4b9281294c56a4bd7254cdb481d}
+
+
+affiche quand une partie est terminée le nom du gagnant et le nombre de coup joué par celui ci 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em nom\-\_\-gagnant} & le nom du gagnant conforme à l'énumération gagnant \\
+\hline
+{\em nombre\-\_\-coups} & le nombre de coups joué par un joueur \\
+\hline
+{\em police} & la police qui sert à écrire les informations \\
+\hline
+{\em texte} & la \-S\-D\-L\-\_\-\-Surface sur laquelle on affiche les informations \\
+\hline
+{\em couleur} & la couleur de la police \\
+\hline
+{\em ecran} & la surface \-S\-D\-L où afficher la fin \\
+\hline
+\end{DoxyParams}
+
+
+\-Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{fonctions_affichage_8h_a6de5a4b9281294c56a4bd7254cdb481d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{fonctions_affichage_8h_a6cede375026585c570c284965c06f83a}{\index{fonctions\-Affichage.\-h@{fonctions\-Affichage.\-h}!affiche\-Joueur@{affiche\-Joueur}}
+\index{affiche\-Joueur@{affiche\-Joueur}!fonctionsAffichage.h@{fonctions\-Affichage.\-h}}
+\subsubsection[{affiche\-Joueur}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf affiche\-Joueur} (
+\begin{DoxyParamCaption}
+\item[{\-S\-D\-L\-\_\-\-Surface $\ast$}]{ecran, }
+\item[{int}]{nb\-\_\-coups, }
+\item[{\-T\-T\-F\-\_\-\-Font $\ast$}]{police, }
+\item[{\-S\-D\-L\-\_\-\-Color}]{couleur}
+\end{DoxyParamCaption}
+)}}\label{fonctions_affichage_8h_a6cede375026585c570c284965c06f83a}
+
+
+fonction affichant le joueur qui est en train de jouer 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em ecran} & la surface \-S\-D\-L où afficher le joueur \\
+\hline
+{\em nb\-\_\-coups} & nombre qui nous sert a determiner le joueur courant selon le nombre de coups joué \\
+\hline
+{\em police} & la police utilisé \\
+\hline
+{\em couleur} & la couleur de la police \\
+\hline
+\end{DoxyParams}
+
+
+\-Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fonctions_affichage_8h_a6cede375026585c570c284965c06f83a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{fonctions_affichage_8h_a805c8a6f72037e8a2d3649e1ff874fa0}{\index{fonctions\-Affichage.\-h@{fonctions\-Affichage.\-h}!affiche\-Menu\-Miniature@{affiche\-Menu\-Miniature}}
+\index{affiche\-Menu\-Miniature@{affiche\-Menu\-Miniature}!fonctionsAffichage.h@{fonctions\-Affichage.\-h}}
+\subsubsection[{affiche\-Menu\-Miniature}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf affiche\-Menu\-Miniature} (
+\begin{DoxyParamCaption}
+\item[{\-S\-D\-L\-\_\-\-Surface $\ast$}]{ecran, }
+\item[{\-S\-D\-L\-\_\-\-Surface $\ast$}]{tab\-Menu\-Miniature\mbox{[}$\,$\mbox{]}, }
+\item[{\-S\-D\-L\-\_\-\-Rect}]{pos\-Tab\-Menu\-Miniature\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{fonctions_affichage_8h_a805c8a6f72037e8a2d3649e1ff874fa0}
+
+
+affiche le menu miniature situé en bas de la fenêtre 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em ecran} & la surface \-S\-D\-L où afficher le menu miniature \\
+\hline
+{\em tab\-Menu\-Miniature\mbox{[}$\,$\mbox{]}} & tableau contenant les élément du menu miniature \\
+\hline
+{\em postab\-Menu\-Miniature\mbox{[}$\,$\mbox{]}} & tableau contenant la position des élément du menu miniature \\
+\hline
+\end{DoxyParams}
+
+
+\-Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fonctions_affichage_8h_a805c8a6f72037e8a2d3649e1ff874fa0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{fonctions_affichage_8h_a830a6d65d1a989f174c3bcde5ae69151}{\index{fonctions\-Affichage.\-h@{fonctions\-Affichage.\-h}!affiche\-Propos@{affiche\-Propos}}
+\index{affiche\-Propos@{affiche\-Propos}!fonctionsAffichage.h@{fonctions\-Affichage.\-h}}
+\subsubsection[{affiche\-Propos}]{\setlength{\rightskip}{0pt plus 5cm}short {\bf affiche\-Propos} (
+\begin{DoxyParamCaption}
+\item[{\-S\-D\-L\-\_\-\-Surface $\ast$}]{ecran}
+\end{DoxyParamCaption}
+)}}\label{fonctions_affichage_8h_a830a6d65d1a989f174c3bcde5ae69151}
+
+
+\-Affiche les information sur le jeu. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em ecran} & la surface \-S\-D\-L où afficher les informations\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Renvoie}
+retourne \-E\-X\-I\-T\-\_\-\-S\-U\-C\-C\-E\-S\-S pour verifier si la fonction c'est exécuté normalement 
+\end{DoxyReturn}
+
+
+\-Voici le graphe d'appel pour cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{fonctions_affichage_8h_a830a6d65d1a989f174c3bcde5ae69151_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{fonctions_affichage_8h_a830a6d65d1a989f174c3bcde5ae69151_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{fonctions_affichage_8h_ad5c598ce2c6742ec4c3e771488987abe}{\index{fonctions\-Affichage.\-h@{fonctions\-Affichage.\-h}!affiche\-Regles@{affiche\-Regles}}
+\index{affiche\-Regles@{affiche\-Regles}!fonctionsAffichage.h@{fonctions\-Affichage.\-h}}
+\subsubsection[{affiche\-Regles}]{\setlength{\rightskip}{0pt plus 5cm}short {\bf affiche\-Regles} (
+\begin{DoxyParamCaption}
+\item[{\-S\-D\-L\-\_\-\-Surface $\ast$}]{ecran}
+\end{DoxyParamCaption}
+)}}\label{fonctions_affichage_8h_ad5c598ce2c6742ec4c3e771488987abe}
+
+
+\-Affiche les rêgles du jeu. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em ecran} & la surface \-S\-D\-L où afficher les règles\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Renvoie}
+retourne \-E\-X\-I\-T\-\_\-\-S\-U\-C\-C\-E\-S\-S pour verifier si la fonction c'est exécuté normalement 
+\end{DoxyReturn}
+
+
+\-Voici le graphe d'appel pour cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{fonctions_affichage_8h_ad5c598ce2c6742ec4c3e771488987abe_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fonctions_affichage_8h_ad5c598ce2c6742ec4c3e771488987abe_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{fonctions_affichage_8h_aefaab0a4a9e4ccb284e6ce210fb6973b}{\index{fonctions\-Affichage.\-h@{fonctions\-Affichage.\-h}!choix\-Menu@{choix\-Menu}}
+\index{choix\-Menu@{choix\-Menu}!fonctionsAffichage.h@{fonctions\-Affichage.\-h}}
+\subsubsection[{choix\-Menu}]{\setlength{\rightskip}{0pt plus 5cm}short {\bf choix\-Menu} (
+\begin{DoxyParamCaption}
+\item[{int}]{abs\-Clic, }
+\item[{int}]{ord\-Clic, }
+\item[{\-S\-D\-L\-\_\-\-Rect}]{pos\-Tab\-Choix\-Menu\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{fonctions_affichage_8h_aefaab0a4a9e4ccb284e6ce210fb6973b}
+
+
+détermine si le joueur clique sur un des choix du menu 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em abs\-Clic} & l'abscice du clic à traiter \\
+\hline
+{\em ord\-Clic} & l'ordonee du clic à traiter \\
+\hline
+{\em pos\-Tab\-Choix\-Menu} & \-Le tableau des position des item à traiter\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Renvoie}
+un nombre qui determnie un choix du menu 
+\end{DoxyReturn}
+
+
+\-Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fonctions_affichage_8h_aefaab0a4a9e4ccb284e6ce210fb6973b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{fonctions_affichage_8h_aa0b97452ac0e386637b196b6b8105c7d}{\index{fonctions\-Affichage.\-h@{fonctions\-Affichage.\-h}!init\-Menu\-Miniature@{init\-Menu\-Miniature}}
+\index{init\-Menu\-Miniature@{init\-Menu\-Miniature}!fonctionsAffichage.h@{fonctions\-Affichage.\-h}}
+\subsubsection[{init\-Menu\-Miniature}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf init\-Menu\-Miniature} (
+\begin{DoxyParamCaption}
+\item[{int}]{partie, }
+\item[{\-S\-D\-L\-\_\-\-Surface $\ast$}]{tab\-Menu\-Miniature\mbox{[}$\,$\mbox{]}, }
+\item[{\-T\-T\-F\-\_\-\-Font $\ast$}]{police, }
+\item[{\-S\-D\-L\-\_\-\-Color}]{couleur}
+\end{DoxyParamCaption}
+)}}\label{fonctions_affichage_8h_aa0b97452ac0e386637b196b6b8105c7d}
+
+
+initialise le menu miniature selon la partie joué 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em partie} & nombre servant à savoir si on joue à 1 ou 2 joueurs \\
+\hline
+{\em tab\-Menu\-Miniature\mbox{[}$\,$\mbox{]}} & \-Surface contenant les item du menu \\
+\hline
+{\em police} & la police utilisé \\
+\hline
+{\em couleur} & la couleur de la police \\
+\hline
+\end{DoxyParams}
+
+
+\-Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fonctions_affichage_8h_aa0b97452ac0e386637b196b6b8105c7d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{fonctions_affichage_8h_a48262da5b852d7d777c20285f2f0b99a}{\index{fonctions\-Affichage.\-h@{fonctions\-Affichage.\-h}!traite\-Menu\-Miniature@{traite\-Menu\-Miniature}}
+\index{traite\-Menu\-Miniature@{traite\-Menu\-Miniature}!fonctionsAffichage.h@{fonctions\-Affichage.\-h}}
+\subsubsection[{traite\-Menu\-Miniature}]{\setlength{\rightskip}{0pt plus 5cm}short {\bf traite\-Menu\-Miniature} (
+\begin{DoxyParamCaption}
+\item[{int}]{abs\-Clic, }
+\item[{int}]{ord\-Clic, }
+\item[{\-S\-D\-L\-\_\-\-Surface $\ast$}]{ecran, }
+\item[{int}]{partie}
+\end{DoxyParamCaption}
+)}}\label{fonctions_affichage_8h_a48262da5b852d7d777c20285f2f0b99a}
+
+
+détermine si le joueur clique sur un des item du menu miniature 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em abs\-Clic} & l'abscice du clic à traiter \\
+\hline
+{\em ord\-Clic} & l'ordonee du clic à traiter \\
+\hline
+{\em ecran} & la surface \-S\-D\-L où afficher les règles \\
+\hline
+{\em partie} & nombre servant à savoir si on joue à 1 ou 2 joueurs\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Renvoie}
+un nombre qui determine un choix du menu 
+\end{DoxyReturn}
+
+
+\-Voici le graphe d'appel pour cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fonctions_affichage_8h_a48262da5b852d7d777c20285f2f0b99a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fonctions_affichage_8h_a48262da5b852d7d777c20285f2f0b99a_icgraph}
+\end{center}
+\end{figure}
+
+

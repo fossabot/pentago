@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Pentago:  Fichier source de headers/fonctionsAffichage.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Pentago
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">headers/fonctionsAffichage.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="fonctions_affichage_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00011"></a>00011 <span class="preprocessor">#ifndef DEF_FONCTIONAFFICHAGE</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span><span class="preprocessor">#define DEF_FONCTIONAFFICHAGE</span>
+<a name="l00013"></a>00013 <span class="preprocessor"></span>
+<a name="l00014"></a>00014 
+<a name="l00015"></a>00015 
+<a name="l00016"></a>00016 <span class="preprocessor">#include &quot;<a class="code" href="constantes_8h.html" title="définitions de constantes">constantes.h</a>&quot;</span>
+<a name="l00017"></a>00017 
+<a name="l00028"></a>00028 <span class="keywordtype">short</span> <a class="code" href="fonctions_affichage_8c.html#aefaab0a4a9e4ccb284e6ce210fb6973b" title="détermine si le joueur clique sur un des choix du menu">choixMenu</a>(<span class="keywordtype">int</span> absClic, <span class="keywordtype">int</span> ordClic, SDL_Rect posTabChoixMenu[]);
+<a name="l00029"></a>00029 
+<a name="l00030"></a>00030 
+<a name="l00039"></a>00039 <span class="keywordtype">short</span> <a class="code" href="fonctions_affichage_8c.html#a6a74e3ea603ed4022ce59f1e57dbb6dd" title="Affiche les rêgles du jeu.">afficheRegles</a>( SDL_Surface *ecran );
+<a name="l00040"></a>00040 
+<a name="l00041"></a>00041 
+<a name="l00050"></a>00050 <span class="keywordtype">short</span> <a class="code" href="fonctions_affichage_8c.html#a830a6d65d1a989f174c3bcde5ae69151" title="Affiche les information sur le jeu.">affichePropos</a>( SDL_Surface *ecran );
+<a name="l00051"></a>00051 
+<a name="l00052"></a>00052 
+<a name="l00067"></a>00067 <span class="keywordtype">void</span> <a class="code" href="fonctions_affichage_8c.html#a6de5a4b9281294c56a4bd7254cdb481d" title="affiche quand une partie est terminée le nom du gagnant et le nombre de coup joué par celui ci...">afficheFin</a> (<span class="keywordtype">int</span> nom_gagnant, <span class="keywordtype">int</span> nombre_coups, TTF_Font* police, SDL_Surface* texte, SDL_Color couleur, SDL_Surface *ecran);
+<a name="l00068"></a>00068 
+<a name="l00069"></a>00069 
+<a name="l00078"></a>00078 <span class="keywordtype">void</span> <a class="code" href="fonctions_affichage_8c.html#a805c8a6f72037e8a2d3649e1ff874fa0" title="affiche le menu miniature situé en bas de la fenêtre">afficheMenuMiniature</a>(SDL_Surface* ecran, SDL_Surface* tabMenuMiniature[], SDL_Rect posTabMenuMiniature[]);
+<a name="l00079"></a>00079 
+<a name="l00080"></a>00080 
+<a name="l00092"></a>00092 <span class="keywordtype">short</span> <a class="code" href="fonctions_affichage_8c.html#a48262da5b852d7d777c20285f2f0b99a" title="détermine si le joueur clique sur un des item du menu miniature">traiteMenuMiniature</a>(<span class="keywordtype">int</span> absClic, <span class="keywordtype">int</span> ordClic,SDL_Surface *ecran,<span class="keywordtype">int</span> partie);
+<a name="l00093"></a>00093 
+<a name="l00094"></a>00094 
+<a name="l00104"></a>00104 <span class="keywordtype">void</span> <a class="code" href="fonctions_affichage_8c.html#aa0b97452ac0e386637b196b6b8105c7d" title="initialise le menu miniature selon la partie joué">initMenuMiniature</a>(<span class="keywordtype">int</span> partie,SDL_Surface* tabMenuMiniature[], TTF_Font * police,  SDL_Color couleur);
+<a name="l00105"></a>00105 
+<a name="l00115"></a>00115 <span class="keywordtype">void</span> <a class="code" href="fonctions_affichage_8c.html#a6cede375026585c570c284965c06f83a" title="fonction affichant le joueur qui est en train de jouer">afficheJoueur</a>(SDL_Surface *ecran, <span class="keywordtype">int</span> nb_coups,TTF_Font * police,  SDL_Color couleur); 
+<a name="l00116"></a>00116 <span class="preprocessor">#endif // DEF_FONCTIONAFFICHAGE</span>
+</pre></div></div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Dimanche Mars 16 2014 23:07:26 pour Pentago par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>
