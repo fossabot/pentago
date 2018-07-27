@@ -1,4 +1,5 @@
 [![License](https://img.shields.io/:license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Folivierschultz%2Fpentago.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Folivierschultz%2Fpentago?ref=badge_shield)
 
 ![Alt text](https://github.com/neroon/Projet-Pentago/blob/master/images/Pentago.jpg "Pentago")
 
@@ -85,3 +86,6 @@ Last Update: 2014-03-17
 MIT License
 
 Copyright (c) 2014 Jeson Dervin - Nicolas Regnault - Olivier Schultz
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Folivierschultz%2Fpentago.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Folivierschultz%2Fpentago?ref=badge_large)
