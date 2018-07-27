@@ -1,3 +1,5 @@
+[![License](https://img.shields.io/:license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
 ![Alt text](https://github.com/neroon/Projet-Pentago/blob/master/images/Pentago.jpg "Pentago")
 
 # Pentago
@@ -41,7 +43,7 @@ We support the following OS:
 
 ## Quickstart
 
-1- Run the following command on the source directory: `./pentago`
+Run the following command on the source directory: `./pentago`
 
 ![Alt text](https://github.com/neroon/Projet-Pentago/blob/master/images/accueil.PNG "Accueil")
 
@@ -57,23 +59,23 @@ This game mode allows you to play against another player.
 
 ![Alt text](https://github.com/neroon/Projet-Pentago/blob/master/images/mode2joueur.PNG "Mode 12joueur")
 
-## Menu miniature
-The miniature menu allows quick and easy navigation during a game. You can choose another game mode or restart the current game, consult the rules or return to the main menu via the "quit" option.
+## Submenu
+The submenu allows quick and easy navigation during a game. You can choose another game mode or restart the current game, consult the rules or return to the main menu.
 
 ![Alt text](https://github.com/neroon/Projet-Pentago/blob/master/images/menuminia.PNG "Menu")
 
-## Consult the rules of the game
-The rules can be consulted in the "REGLES" submenu, and also during a game via the miniature menu.
+## Games rules
+The games rules can be consulted with the `REGLES` option in the main meny or during a game via the submenu.
 
 ![Alt text](https://github.com/neroon/Projet-Pentago/blob/master/images/regles.PNG "Règles")
 
 ## About the game
-Information about the game design environment and the development team.
+You can access to information about the game design and the development team with the `A PROPOS` option in the main menu.
 
 ![Alt text](https://github.com/neroon/Projet-Pentago/blob/master/images/propos.PNG "A propos")
 
 ## Quit the game
-To exit the game, simply click on the "Exit" main menu tab or via the "ESC" key on your keyboard.
+To exit the game, simply click on `QUITTER` or via the `ESC` key on your keyboard.
 
 ## Update
 Last Update: 2014-03-17
