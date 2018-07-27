@@ -84,6 +84,4 @@ Last Update: 2014-03-17
 
 MIT License
 
-Copyright 2014 Jeson Dervin - Nicolas Regnault - Olivier Schultz
-
-
+Copyright (c) 2014 Jeson Dervin - Nicolas Regnault - Olivier Schultz
